@@ -4,25 +4,26 @@ import { RouterModule, Routes } from '@angular/router';
 // Project imports
 import { AuthGuard } from './guards/auth.guard'; // Asegúrate de importar el guard
 import { LoginComponent } from './pages/login/login.component'; // Asegúrate de importar el LoginComponent
-import { DashboardComponent } from './pages/dashboard/dashboard.component'; // Asegúrate de importar el DashboardComponent
+import { DashboardComponent } from './pages/dashboard/dashboard.component';  // Cambiado a importación con {}
+import ConsultaComponent from './pages/empresa/consulta/consulta.component';
 
 const routes: Routes = [
   {
-    path: '',  // Ruta por defecto
-    redirectTo: '/login',  // Redirige a la página de login
-    pathMatch: 'full'  // Asegura que redirija solo si no hay otras rutas
+    path: '', 
+    redirectTo: '/login',  
+    pathMatch: 'full'  
   },
   {
     path: 'login',
-    component: LoginComponent,  // Página de login directamente
+    component: LoginComponent,  // Asegúrate de redirigir al LoginComponent
   },
   {
     path: 'dashboard',
-    component: DashboardComponent,  // Ruta protegida al Dashboard
-    canActivate: [AuthGuard], // Aplica el guardia de autenticación
+    component: DashboardComponent,
+    canActivate: [AuthGuard]  // Protege la ruta con el AuthGuard
   },
   {
-    path: '**', // Redirige cualquier ruta no encontrada al login
+    path: '**',  // Redirige cualquier ruta no encontrada al login
     redirectTo: '/login'
   }
 ];
