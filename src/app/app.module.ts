@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Quita el módulo interno
+import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms'; // Quita el módulo interno
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 @NgModule({
@@ -18,7 +19,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule, // Solo importa estos módulos
+    ReactiveFormsModule,
+    FormControl
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

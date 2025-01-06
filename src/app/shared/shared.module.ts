@@ -6,7 +6,6 @@ import { HeaderComponent } from '../components/header/header.component';
 import { FooterComponent } from '../components/footer/footer.component';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { MenuComponent } from '../components/menu/menu.component';
-import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -16,7 +15,7 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     NavbarComponent,
     MenuComponent,
-
+    
   ],
   imports: [CommonModule],
   exports: [
