@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+app-consulta,
+app-actividades,
+app-notificaciones,
+app-actividades-diarias,
+app-actividades-mensuales,
+app-actividades-notificaciones,
+app-actividades-semanales,
+app-panel,
+app-calendario,
+app-dashboard,
+app-mantenimiento,
+app-registro,
+app-historial,
+app-login,
+app-general,
+app-estados,
+app-inicio,
+app-registrar-incompletos,
+app-accesos,
+app-perfiles,
+app-usuarios
+{
+  width: 100%;
+}
+
+.modal-backdrop {
+  position: fixed !important;
+  z-index: 1040 !important;
+}
+
+.modal {
+  position: fixed !important;
+  z-index: 1050 !important;
+  display: block !important;
+}
