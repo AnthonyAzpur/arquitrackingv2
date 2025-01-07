@@ -3,15 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms'; // Quita el módulo interno
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Quita el módulo interno
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './components/menu/menu.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    DashboardComponent,
+    SidebarComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavbarComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +31,7 @@ import { MenuComponent } from './components/menu/menu.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    FormControl
+    HttpClientModule,
 
 
   ],
